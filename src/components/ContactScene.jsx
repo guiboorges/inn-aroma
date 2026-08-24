@@ -9,7 +9,7 @@ export default function ContactScene({ boost, cor }) {
   return (
     <Canvas
       camera={{ position: [0, 0.3, 4.6], fov: 40 }}
-      dpr={[1, 2]}
+      dpr={[1, 1.5]}
       gl={{ antialias: true, alpha: true }}
       style={{ pointerEvents: 'none' }}
       eventSource={typeof document !== 'undefined' ? document.body : undefined}

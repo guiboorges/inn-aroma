@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { useMotionValue, useSpring } from 'motion/react'
 import { aromas } from '../data/aromas.js'
 import Revelar from '../components/Revelar.jsx'
 import Rodape from '../components/Rodape.jsx'
-import ContactScene from '../components/ContactScene.jsx'
+
+// three.js só descarrega nesta página
+const ContactScene = lazy(() => import('../components/ContactScene.jsx'))
 
 const EMAIL_VALIDO = /\S+@\S+\.\S+/
 
@@ -202,7 +204,9 @@ export default function Contactos() {
           </div>
 
           <div className="contactos-cena" aria-hidden="true">
-            <ContactScene boost={boost} cor={aromaSel ? aromaSel.tintaForte : '#ffffff'} />
+            <Suspense fallback={null}>
+              <ContactScene boost={boost} cor={aromaSel ? aromaSel.tintaForte : '#ffffff'} />
+            </Suspense>
           </div>
         </div>
       </section>

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-24T21:33:35Z",
+  "title": "Design System: INN AROMA",
+  "extensions": {
+    "colorMeta": {
+      "papel-quente": { "role": "primary", "displayName": "Papel Quente", "canonical": "oklch(98% 0.006 85)", "tonalRamp": ["oklch(15% 0.006 85)", "oklch(25% 0.006 85)", "oklch(38% 0.006 85)", "oklch(50% 0.006 85)", "oklch(62% 0.006 85)", "oklch(75% 0.006 85)", "oklch(88% 0.006 85)", "oklch(98% 0.006 85)"] },
+      "tinta-sepia": { "role": "primary", "displayName": "Tinta de Sépia", "canonical": "oklch(18% 0.012 95)", "tonalRamp": ["oklch(15% 0.012 95)", "oklch(25% 0.012 95)", "oklch(38% 0.012 95)", "oklch(50% 0.012 95)", "oklch(62% 0.012 95)", "oklch(75% 0.012 95)", "oklch(88% 0.012 95)", "oklch(95% 0.012 95)"] },
+      "cinza-fumo": { "role": "neutral", "displayName": "Cinza Fumo", "canonical": "oklch(52% 0.012 95)", "tonalRamp": ["oklch(15% 0.012 95)", "oklch(25% 0.012 95)", "oklch(38% 0.012 95)", "oklch(52% 0.012 95)", "oklch(62% 0.012 95)", "oklch(75% 0.012 95)", "oklch(88% 0.012 95)", "oklch(95% 0.012 95)"] },
+      "filete": { "role": "neutral", "displayName": "Filete", "canonical": "rgba(22, 21, 15, 0.14)", "tonalRamp": ["rgba(22,21,15,0.9)", "rgba(22,21,15,0.72)", "rgba(22,21,15,0.5)", "rgba(22,21,15,0.35)", "rgba(22,21,15,0.22)", "rgba(22,21,15,0.14)", "rgba(22,21,15,0.08)", "rgba(22,21,15,0.04)"] },
+      "papel-tocado": { "role": "neutral", "displayName": "Papel Tocado", "canonical": "oklch(95% 0.008 85)", "tonalRamp": ["oklch(15% 0.008 85)", "oklch(25% 0.008 85)", "oklch(38% 0.008 85)", "oklch(50% 0.008 85)", "oklch(62% 0.008 85)", "oklch(75% 0.008 85)", "oklch(88% 0.008 85)", "oklch(95% 0.008 85)"] },
+      "branco-palco": { "role": "neutral", "displayName": "Branco Palco", "canonical": "#ffffff", "tonalRamp": ["oklch(15% 0 0)", "oklch(25% 0 0)", "oklch(38% 0 0)", "oklch(50% 0 0)", "oklch(62% 0 0)", "oklch(75% 0 0)", "oklch(88% 0 0)", "oklch(100% 0 0)"] },
+      "herbais-tinta": { "role": "secondary", "displayName": "Herbais — tinta", "canonical": "oklch(94% 0.02 145)", "tonalRamp": ["oklch(15% 0.04 145)", "oklch(25% 0.05 145)", "oklch(38% 0.06 145)", "oklch(50% 0.06 145)", "oklch(62% 0.05 145)", "oklch(75% 0.04 145)", "oklch(88% 0.03 145)", "oklch(94% 0.02 145)"] },
+      "herbais-acento": { "role": "secondary", "displayName": "Herbais — acento (verde de eucalipto)", "canonical": "oklch(42% 0.06 150)", "tonalRamp": ["oklch(15% 0.04 150)", "oklch(25% 0.05 150)", "oklch(42% 0.06 150)", "oklch(50% 0.06 150)", "oklch(62% 0.05 150)", "oklch(75% 0.04 150)", "oklch(88% 0.03 150)", "oklch(95% 0.02 150)"] },
+      "florais-tinta": { "role": "secondary", "displayName": "Florais — tinta", "canonical": "oklch(94% 0.02 355)", "tonalRamp": ["oklch(15% 0.05 355)", "oklch(25% 0.07 355)", "oklch(38% 0.09 355)", "oklch(50% 0.1 355)", "oklch(62% 0.08 355)", "oklch(75% 0.06 355)", "oklch(88% 0.04 355)", "oklch(94% 0.02 355)"] },
+      "florais-acento": { "role": "secondary", "displayName": "Florais — acento (rosa de peónia)", "canonical": "oklch(48% 0.11 355)", "tonalRamp": ["oklch(15% 0.05 355)", "oklch(25% 0.07 355)", "oklch(38% 0.09 355)", "oklch(48% 0.11 355)", "oklch(62% 0.08 355)", "oklch(75% 0.06 355)", "oklch(88% 0.04 355)", "oklch(95% 0.02 355)"] },
+      "frutados-tinta": { "role": "secondary", "displayName": "Frutados — tinta", "canonical": "oklch(95% 0.04 75)", "tonalRamp": ["oklch(15% 0.05 65)", "oklch(25% 0.08 65)", "oklch(38% 0.11 65)", "oklch(50% 0.13 65)", "oklch(62% 0.12 70)", "oklch(75% 0.09 72)", "oklch(88% 0.06 75)", "oklch(95% 0.04 75)"] },
+      "frutados-acento": { "role": "secondary", "displayName": "Frutados — acento (laranja de manga)", "canonical": "oklch(52% 0.14 55)", "tonalRamp": ["oklch(15% 0.05 55)", "oklch(25% 0.08 55)", "oklch(38% 0.11 55)", "oklch(52% 0.14 55)", "oklch(62% 0.12 55)", "oklch(75% 0.09 55)", "oklch(88% 0.06 55)", "oklch(95% 0.03 55)"] },
+      "vinhos-tinta": { "role": "secondary", "displayName": "Vinhos — tinta", "canonical": "oklch(92% 0.02 355)", "tonalRamp": ["oklch(15% 0.06 5)", "oklch(25% 0.09 5)", "oklch(38% 0.1 5)", "oklch(50% 0.1 5)", "oklch(62% 0.08 5)", "oklch(75% 0.06 5)", "oklch(88% 0.04 5)", "oklch(92% 0.02 355)"] },
+      "vinhos-acento": { "role": "secondary", "displayName": "Vinhos — acento (bordeaux)", "canonical": "oklch(30% 0.09 5)", "tonalRamp": ["oklch(15% 0.06 5)", "oklch(30% 0.09 5)", "oklch(38% 0.1 5)", "oklch(50% 0.1 5)", "oklch(62% 0.08 5)", "oklch(75% 0.06 5)", "oklch(88% 0.04 5)", "oklch(95% 0.02 5)"] },
+      "amadeirados-tinta": { "role": "secondary", "displayName": "Amadeirados — tinta", "canonical": "oklch(93% 0.025 80)", "tonalRamp": ["oklch(15% 0.04 70)", "oklch(25% 0.06 70)", "oklch(38% 0.07 70)", "oklch(50% 0.07 70)", "oklch(62% 0.06 72)", "oklch(75% 0.05 75)", "oklch(88% 0.035 78)", "oklch(93% 0.025 80)"] },
+      "amadeirados-acento": { "role": "secondary", "displayName": "Amadeirados — acento (cedro)", "canonical": "oklch(36% 0.06 65)", "tonalRamp": ["oklch(15% 0.04 65)", "oklch(25% 0.06 65)", "oklch(36% 0.06 65)", "oklch(50% 0.07 65)", "oklch(62% 0.06 65)", "oklch(75% 0.05 65)", "oklch(88% 0.035 65)", "oklch(95% 0.02 65)"] },
+      "alta-perfumaria-tinta": { "role": "secondary", "displayName": "Alta Perfumaria — tinta", "canonical": "oklch(94% 0.02 90)", "tonalRamp": ["oklch(15% 0.04 88)", "oklch(25% 0.07 88)", "oklch(38% 0.09 88)", "oklch(52% 0.11 88)", "oklch(62% 0.1 88)", "oklch(75% 0.07 89)", "oklch(88% 0.04 90)", "oklch(94% 0.02 90)"] },
+      "alta-perfumaria-acento": { "role": "secondary", "displayName": "Alta Perfumaria — acento (ouro velho)", "canonical": "oklch(52% 0.1 88)", "tonalRamp": ["oklch(15% 0.04 88)", "oklch(25% 0.07 88)", "oklch(38% 0.09 88)", "oklch(52% 0.1 88)", "oklch(62% 0.1 88)", "oklch(75% 0.07 88)", "oklch(88% 0.04 88)", "oklch(95% 0.02 88)"] },
+      "gourmet-tinta": { "role": "secondary", "displayName": "Gourmet — tinta", "canonical": "oklch(92% 0.02 55)", "tonalRamp": ["oklch(15% 0.04 50)", "oklch(25% 0.06 50)", "oklch(38% 0.07 50)", "oklch(50% 0.08 50)", "oklch(62% 0.07 52)", "oklch(75% 0.05 53)", "oklch(88% 0.03 55)", "oklch(92% 0.02 55)"] },
+      "gourmet-acento": { "role": "secondary", "displayName": "Gourmet — acento (café)", "canonical": "oklch(38% 0.07 50)", "tonalRamp": ["oklch(15% 0.04 50)", "oklch(25% 0.06 50)", "oklch(38% 0.07 50)", "oklch(50% 0.08 50)", "oklch(62% 0.07 50)", "oklch(75% 0.05 50)", "oklch(88% 0.03 50)", "oklch(95% 0.02 50)"] },
+      "latao-difusor": { "role": "tertiary", "displayName": "Latão do Difusor", "canonical": "oklch(70% 0.09 85)", "tonalRamp": ["oklch(15% 0.04 85)", "oklch(25% 0.06 85)", "oklch(38% 0.08 85)", "oklch(50% 0.09 85)", "oklch(62% 0.09 85)", "oklch(70% 0.09 85)", "oklch(88% 0.05 85)", "oklch(95% 0.02 85)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Nome INN AROMA no hero, nome de cada família, título de cada página. Letra a letra no hero." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos de secção e CTAs; frases com ponto final." },
+      "statement": { "displayName": "Statement", "purpose": "Declarações institucionais longas em caixa normal; ênfase com sublinhado de 1px, sem itálico." },
+      "title": { "displayName": "Title", "purpose": "Nomes de segmentos, setores, certificações e produtos." },
+      "body": { "displayName": "Body", "purpose": "Parágrafos principais, max-width 30–34rem." },
+      "body-muted": { "displayName": "Body muted", "purpose": "Descrições em células e legendas, em Cinza Fumo." },
+      "label": { "displayName": "Label", "purpose": "Rótulos de bloco, navegação, botões, chips, preço, índices. Sempre caixa alta." },
+      "wordmark": { "displayName": "Wordmark", "purpose": "A marca escrita junto ao logótipo; no rodapé sobe de tamanho a peso 100." }
+    },
+    "shadows": [
+      { "name": "pouso-fotografia", "value": "0 45px 90px -20px rgba(22, 21, 15, 0.28)", "purpose": "Fotografias de família emolduradas a branco a pousar no papel." },
+      { "name": "pouso-fotografia-cta", "value": "0 45px 90px -25px rgba(22, 21, 15, 0.3)", "purpose": "Imagens de CTA e parceria." },
+      { "name": "pouso-banda", "value": "0 40px 80px -22px rgba(22, 21, 15, 0.26)", "purpose": "Imagens nas bandas da página de aromas." },
+      { "name": "pilula-preco", "value": "0 8px 24px rgba(22, 21, 15, 0.12)", "purpose": "Único componente de UI com sombra: a pílula de preço sobre o palco." }
+    ],
+    "motion": [
+      { "name": "ease-sistema", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Curva de todas as entradas de texto, revelações e zoom de imagem." },
+      { "name": "duracao-hover", "value": "0.3s ease", "purpose": "Opacidade, tracking, cor de filete e fundo em hover (0.4s para fundo de células)." },
+      { "name": "duracao-revelar", "value": "0.85s", "purpose": "Revelar: y 42px → 0, 0.08s por índice, once." },
+      { "name": "duracao-letra", "value": "0.9s + 0.045s/letra", "purpose": "Título do hero letra a letra, de y 110% a 0." },
+      { "name": "duracao-imagem", "value": "0.7s–1.2s", "purpose": "Escala de imagem em hover (1.03–1.07)." },
+      { "name": "fumo-derivar", "value": "9s–21s ease-in-out infinite", "purpose": "Deriva das bolhas de névoa; desligada em prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "compacto", "value": "640px" },
+      { "name": "empilhar", "value": "820px" },
+      { "name": "contactos", "value": "900px" },
+      { "name": "coluna", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão primário",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "CTA sólido em tinta; caixa alta espaçada com text-indent para centrar oticamente.",
+      "html": "<a class=\"ds-botao\" href=\"#\">Pedir contacto</a>",
+      "css": ".ds-botao { display: inline-block; font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 0.72rem; letter-spacing: 0.42em; text-transform: uppercase; text-indent: 0.42em; background: #16150f; color: #faf8f4; padding: 1.25em 2.8em 1.05em; text-decoration: none; transition: opacity 0.3s ease, transform 0.3s ease; } .ds-botao:hover { opacity: 0.85; transform: translateY(-2px); } .ds-botao:focus-visible { outline: 1px solid #16150f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Botão outline (loja)",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Filete de 1px que se preenche em hover; usado para a loja no header.",
+      "html": "<a class=\"ds-loja\" href=\"#\">Loja</a>",
+      "css": ".ds-loja { display: inline-block; font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 0.68rem; letter-spacing: 0.4em; text-transform: uppercase; color: #16150f; border: 1px solid #16150f; padding: 0.7em 1.4em 0.55em; text-decoration: none; transition: background 0.3s ease, color 0.3s ease; } .ds-loja:hover { background: #16150f; color: #faf8f4; } .ds-loja:focus-visible { outline: 1px solid #16150f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Link sublinhado",
+      "kind": "button",
+      "refersTo": "link-underline",
+      "description": "Ligação secundária: sublinhado 1px no acento da família; o tracking abre em hover.",
+      "html": "<a class=\"ds-ligacao\" href=\"#\">Ver na loja</a>",
+      "css": ".ds-ligacao { display: inline-block; font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 0.66rem; letter-spacing: 0.34em; text-transform: uppercase; color: #16150f; border-bottom: 1px solid #3d5a40; padding-bottom: 0.35em; text-decoration: none; transition: opacity 0.3s ease, letter-spacing 0.3s ease; } .ds-ligacao:hover { opacity: 0.65; letter-spacing: 0.42em; } .ds-ligacao:focus-visible { outline: 1px solid #16150f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Chip de nota",
+      "kind": "chip",
+      "refersTo": "chip-nota",
+      "description": "Pílula de filete para notas olfativas; como botão seleciona a família e enche-se com o acento.",
+      "html": "<div style=\"display:flex;gap:0.5rem;flex-wrap:wrap\"><button class=\"ds-chip\" type=\"button\">Eucalipto</button><button class=\"ds-chip ds-chip-sel\" type=\"button\">Alecrim</button></div>",
+      "css": ".ds-chip { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: #16150f; background: transparent; border: 1px solid currentColor; border-radius: 999px; padding: 0.5em 1.1em 0.35em; cursor: pointer; transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; } .ds-chip:hover { transform: translateY(-2px); } .ds-chip-sel { background: #3d5a40; border-color: #3d5a40; color: #e7efe3; } .ds-chip:focus-visible { outline: 1px solid #16150f; outline-offset: 3px; }"
+    },
+    {
+      "name": "Rótulo de bloco",
+      "kind": "custom",
+      "refersTo": "label",
+      "description": "Abre cada bloco: rótulo em Cinza Fumo seguido de filete a preencher a linha.",
+      "html": "<p class=\"ds-rotulo\">Os nossos clientes</p>",
+      "css": ".ds-rotulo { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.42em; font-size: 0.7rem; color: #6f6c64; display: flex; align-items: center; gap: 1.2rem; margin: 0; } .ds-rotulo::after { content: ''; flex: 1; height: 1px; background: rgba(22, 21, 15, 0.14); }"
+    },
+    {
+      "name": "Célula de filete",
+      "kind": "card",
+      "refersTo": "card-filete",
+      "description": "Item de grelha de filete (segmentos, setores): índice, título em caixa alta, descrição muted; hover em Papel Tocado.",
+      "html": "<article class=\"ds-celula\"><span class=\"ds-celula-indice\">01</span><h3 class=\"ds-celula-titulo\">Hotelaria</h3><p class=\"ds-celula-texto\">Uma assinatura olfativa no lobby que os hóspedes levam consigo.</p></article>",
+      "css": ".ds-celula { border: 1px solid rgba(22, 21, 15, 0.14); padding: 2.2rem 1.8rem 2rem; min-height: 14rem; display: flex; flex-direction: column; gap: 1.1rem; background: #faf8f4; color: #16150f; max-width: 320px; transition: background 0.4s ease; } .ds-celula:hover { background: #f2efe8; } .ds-celula-indice { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-size: 0.7rem; letter-spacing: 0.3em; color: #6f6c64; } .ds-celula-titulo { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.26em; font-size: 0.98rem; margin: 0; } .ds-celula-texto { font-family: 'Biryani', Georgia, sans-serif; font-weight: 300; font-size: 0.88rem; line-height: 1.7; color: #6f6c64; margin: 0; }"
+    },
+    {
+      "name": "Palco de produto",
+      "kind": "card",
+      "refersTo": "palco-produto",
+      "description": "Fundo na tinta da família com a foto em multiply e a pílula de preço; em hover escurece para tintaForte e a imagem sobe.",
+      "html": "<figure class=\"ds-palco\"><span class=\"ds-preco\">49,95 €</span><div class=\"ds-palco-img\"></div></figure>",
+      "css": ".ds-palco { position: relative; background: #e7efe3; border-radius: 4px; width: 240px; aspect-ratio: 4 / 5; display: flex; align-items: center; justify-content: center; padding: 11%; margin: 0; overflow: hidden; transition: background 0.55s ease; } .ds-palco:hover { background: #d3e2cb; } .ds-palco-img { width: 60%; aspect-ratio: 1; background: #fdfcf9; border-radius: 14%; box-shadow: inset 0 0 0 1px rgba(22,21,15,0.06); mix-blend-mode: multiply; transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1); } .ds-palco:hover .ds-palco-img { transform: scale(1.07) translateY(-3px); } .ds-preco { position: absolute; top: 1.1rem; right: 1.1rem; font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 0.72rem; letter-spacing: 0.18em; background: #faf8f4; color: #16150f; padding: 0.55em 1em 0.4em; border-radius: 999px; box-shadow: 0 8px 24px rgba(22, 21, 15, 0.12); }"
+    },
+    {
+      "name": "Campo de linha",
+      "kind": "input",
+      "refersTo": "input-linha",
+      "description": "Rótulo em Cinza Fumo por cima; campo sem fundo, só filete inferior que escurece em foco.",
+      "html": "<label class=\"ds-campo\"><span class=\"ds-campo-rotulo\">Nome</span><input class=\"ds-campo-input\" type=\"text\" placeholder=\"Como se chama?\" /></label>",
+      "css": ".ds-campo { display: flex; flex-direction: column; gap: 0.55rem; max-width: 34rem; } .ds-campo-rotulo { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.42em; font-size: 0.62rem; color: #6f6c64; } .ds-campo-input { font-family: 'Biryani', Georgia, sans-serif; font-weight: 300; font-size: 1rem; color: #16150f; background: transparent; border: 0; border-bottom: 1px solid rgba(22, 21, 15, 0.14); padding: 0.45em 0 0.55em; outline: none; transition: border-color 0.3s ease; } .ds-campo-input::placeholder { color: rgba(111, 108, 100, 0.55); } .ds-campo-input:focus { border-bottom-color: #16150f; }"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Links do header em caixa alta espaçada com sublinhado 1px em hover/ativo; a loja é o botão outline.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">Aromas</a><a class=\"ds-nav-link ds-nav-ativa\" href=\"#\">Clientes</a><a class=\"ds-nav-link\" href=\"#\">Contactos</a><a class=\"ds-nav-loja\" href=\"#\">Loja</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 2.2rem; } .ds-nav-link { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 0.68rem; letter-spacing: 0.4em; text-transform: uppercase; color: #16150f; text-decoration: none; padding-bottom: 0.35em; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; } .ds-nav-link:hover, .ds-nav-ativa { border-bottom-color: #16150f; } .ds-nav-loja { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 500; font-size: 0.68rem; letter-spacing: 0.4em; text-transform: uppercase; color: #16150f; border: 1px solid #16150f; padding: 0.7em 1.4em 0.55em; text-decoration: none; transition: background 0.3s ease, color 0.3s ease; } .ds-nav-loja:hover { background: #16150f; color: #faf8f4; }"
+    },
+    {
+      "name": "Título gigante com pontos",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "Assinatura tipográfica: nome em Raleway 100 caixa alta, os três pontos do logótipo e a tagline com tracking 0.5em.",
+      "html": "<div class=\"ds-hero\"><h1 class=\"ds-hero-nome\">Inn Aroma</h1><div class=\"ds-hero-pontos\"><span></span><span></span><span></span></div><p class=\"ds-hero-tagline\">Aromas que marcam</p></div>",
+      "css": ".ds-hero { display: flex; flex-direction: column; align-items: center; text-align: center; color: #16150f; } .ds-hero-nome { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 100; text-transform: uppercase; letter-spacing: 0.14em; line-height: 1.04; font-size: clamp(2.6rem, 8vw, 6rem); margin: 0; } .ds-hero-pontos { display: flex; gap: 1rem; margin: 1.6rem 0; } .ds-hero-pontos span { width: 9px; height: 9px; border-radius: 50%; background: #16150f; } .ds-hero-tagline { font-family: 'Raleway', 'Helvetica Neue', sans-serif; font-weight: 300; font-size: 1.2rem; letter-spacing: 0.5em; text-transform: uppercase; text-indent: 0.5em; margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Perfumaria de Papel",
+    "overview": "O site é uma perfumaria feita de papel: uma folha quente, contínua, onde a marca está escrita a tinta de sépia em caixa alta com espaçamento largo, como o rótulo de um frasco. Nada é colorido por defeito. A cor entra apenas quando um aroma entra — como névoa que atravessa o ecrã entre famílias, ou como uma tinta pálida que tinge o palco onde cada produto pousa. O difusor, branco com bocal de latão, é a única peça com volume real; tudo o resto é tipografia, filete e ar.\n\nO tom confirmado é luxuoso, sensorial e envolvente, mas conseguido por subtração: fontes com pesos 100–300, vazios generosos, títulos gigantes que ocupam o ecrã inteiro e nomes-fantasma a 5–7 % de opacidade a atravessar as margens. A sensualidade vem da escala, da névoa e das tintas das famílias, nunca de saturação, ícones ou cartões. A anti-referência é o site corporativo B2B frio — azul, ícones de linha, blocos de três colunas com título e parágrafo iguais.\n\nOs componentes são refinados e contidos: filetes de 1 px, caixa alta espaçada, hovers que mudam opacidade, tracking ou o tom do papel. Nada salta; tudo desliza com a mesma curva cubic-bezier(0.22, 1, 0.36, 1).",
+    "keyCharacteristics": [
+      "Uma só folha de papel quente (#faf8f4) do topo ao rodapé; o rodapé inverte para tinta.",
+      "Raleway em caixa alta, peso 100–500, tracking 0.14–0.5em, como rótulo de frasco.",
+      "A cor pertence às sete famílias de aroma: tinta pálida no palco, acento escuro no detalhe.",
+      "Névoa (bolhas blur(46–58px)) é o dispositivo de transição e a assinatura de movimento.",
+      "Filetes de 1 px em vez de cartões; sombras longas apenas sob fotografia.",
+      "O motivo dos três pontos do logótipo reaparece como rail, marcador e ornamento."
+    ],
+    "rules": [
+      { "name": "A Regra da Cor Emprestada", "body": "A interface não tem cor própria. Qualquer cor além de papel, tinta e cinza tem de vir de uma família de aroma real (src/data/aromas.js) e só aparece onde essa família está presente.", "section": "colors" },
+      { "name": "A Regra do Multiply", "body": "Fotografias com fundo branco pousam no palco tingido com mix-blend-mode: multiply; no rodapé escuro, selos brancos usam grayscale(1) invert(1) + mix-blend-mode: screen. Nunca recortar imagens à mão para esconder um fundo.", "section": "colors" },
+      { "name": "A Regra da Caixa Alta Espaçada", "body": "Tudo o que é Raleway vai em caixa alta com tracking ≥ 0.14em; quanto mais pequeno o texto, mais largo o tracking (0.7rem → 0.42em). Um botão leva text-indent igual ao tracking para centrar oticamente.", "section": "typography" },
+      { "name": "A Regra do Ponto Final", "body": "Títulos de secção são frases e terminam com ponto: \"Powered by iServices.\" \"Fale connosco.\"", "section": "typography" },
+      { "name": "A Regra do Peso Cem", "body": "Títulos gigantes usam peso 100; nunca engrossar para ganhar presença — ganha-se com tamanho e tracking.", "section": "typography" },
+      { "name": "A Regra do Rótulo com Filete", "body": "Cada bloco abre com um rótulo em Cinza Fumo seguido de um filete que preenche a linha até à margem, com 3rem de margem abaixo. É o índice do catálogo; nunca abrir um bloco com um título grande sem esse rótulo.", "section": "layout" },
+      { "name": "A Regra da Sombra Fotográfica", "body": "Só uma imagem ou o produto podem projetar sombra. Um cartão, botão, campo ou menu com box-shadow está errado.", "section": "elevation" },
+      { "name": "A Regra da Névoa", "body": "Transições entre estados de conteúdo (famílias, hero → secção, formulário a ganhar vida) passam por névoa, não por cortes, slides ou fades secos.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do manter uma única folha de Papel Quente (#faf8f4) e trocar para Tinta de Sépia só no rodapé.",
+      "Do escrever tudo o que é Raleway em caixa alta com tracking ≥ 0.14em e peso 100–500; títulos gigantes a peso 100.",
+      "Do abrir cada bloco com rótulo em Cinza Fumo + filete a preencher a linha.",
+      "Do ir buscar cor a src/data/aromas.js (tinta/tintaForte/acento) sempre que uma família está presente; o resto fica monocromático.",
+      "Do pousar fotografia com moldura branca, 3px de raio e a sombra longa 0 45px 90px -20px rgba(22,21,15,0.28).",
+      "Do usar mix-blend-mode: multiply para fotos sobre palco e invert + screen para selos sobre o rodapé.",
+      "Do transitar entre estados com névoa e a curva cubic-bezier(0.22, 1, 0.36, 1); respeitar prefers-reduced-motion.",
+      "Do testar a 1440, 2560×902 e 390 — os títulos com tracking largo partem primeiro em ultrawide."
+    ],
+    "donts": [
+      "Don't usar azul, ícones de linha ou blocos de três colunas iguais — é a anti-referência corporativa confirmada.",
+      "Don't dar sombra a cartões, botões, campos ou menus; só fotografia e a pílula de preço.",
+      "Don't introduzir raios intermédios (8–16px); o sistema só tem 0, 3, 4 e 999px.",
+      "Don't usar #000 nem cinzas neutros frios; todas as linhas e sombras são Tinta de Sépia com alpha.",
+      "Don't engrossar um título para lhe dar presença; aumentar o tamanho ou o tracking.",
+      "Don't recortar fotografias à mão para esconder fundos brancos — o blend resolve.",
+      "Don't inventar uma cor de destaque de marca; INN AROMA não tem cor, tem aromas."
+    ]
+  }
+}

@@ -1,9 +1,12 @@
+import { lazy, Suspense } from 'react'
 import Hero from './sections/Hero.jsx'
 import AromaShowcase from './sections/AromaShowcase.jsx'
 import Institutional from './sections/Institutional.jsx'
-import Clientes from './pages/Clientes.jsx'
-import Contactos from './pages/Contactos.jsx'
-import Aromas from './pages/Aromas.jsx'
+
+// páginas secundárias só descarregam quando visitadas
+const Clientes = lazy(() => import('./pages/Clientes.jsx'))
+const Contactos = lazy(() => import('./pages/Contactos.jsx'))
+const Aromas = lazy(() => import('./pages/Aromas.jsx'))
 
 function Home() {
   return (
@@ -51,7 +54,9 @@ export default function App() {
         </nav>
       </header>
       <main>
-        {emAromas ? <Aromas /> : emContactos ? <Contactos /> : emClientes ? <Clientes /> : <Home />}
+        <Suspense fallback={null}>
+          {emAromas ? <Aromas /> : emContactos ? <Contactos /> : emClientes ? <Clientes /> : <Home />}
+        </Suspense>
       </main>
     </>
   )

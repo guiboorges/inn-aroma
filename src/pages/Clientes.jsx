@@ -99,7 +99,7 @@ export default function Clientes() {
         <Revelar custom={1}>
           <figure className="logos-parede">
             <img
-              src="/images/clientes-logos.jpg"
+              src="/images/clientes-logos.webp"
               alt="Logótipos de clientes da INN AROMA: Rolex, IKEA, Hilton, CTT, Cruz Vermelha Portuguesa, SL Benfica, Tivoli, InterContinental, Corinthia, Mercedes-Benz, entre muitos outros"
               loading="lazy"
             />
@@ -137,7 +137,7 @@ export default function Clientes() {
         <div className="parceria-destaque">
           <Revelar className="parceria-imagem">
             <img
-              src="/images/difusor-iservices.jpg"
+              src="/images/difusor-iservices.webp"
               alt="Difusor Inn Aroma powered by iServices"
               loading="lazy"
             />

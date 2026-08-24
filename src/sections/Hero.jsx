@@ -1,6 +1,8 @@
-import { useRef } from 'react'
+import { lazy, Suspense, useRef } from 'react'
 import { motion, useScroll, useTransform } from 'motion/react'
-import DiffuserScene from '../components/DiffuserScene.jsx'
+
+// three.js só descarrega depois do primeiro paint; o fade da cena esconde a chegada
+const DiffuserScene = lazy(() => import('../components/DiffuserScene.jsx'))
 
 const NOME = 'INN AROMA'
 
@@ -9,7 +11,7 @@ const letra = {
   visivel: (i) => ({
     y: '0%',
     opacity: 1,
-    transition: { duration: 0.9, delay: 0.25 + i * 0.055, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.9, delay: 0.1 + i * 0.045, ease: [0.22, 1, 0.36, 1] },
   }),
 }
 
@@ -42,9 +44,11 @@ export default function Hero() {
           aria-hidden="true"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.6, delay: 1.2 }}
+          transition={{ duration: 1.6, delay: 0.9 }}
         >
-          <DiffuserScene boost={scrollYProgress} />
+          <Suspense fallback={null}>
+            <DiffuserScene boost={scrollYProgress} />
+          </Suspense>
         </motion.div>
 
         <motion.div className="hero-conteudo" style={{ opacity: opacidadeTexto, y: yTexto }}>
@@ -83,7 +87,7 @@ export default function Hero() {
                 key={i}
                 initial={{ opacity: 0, y: -14 }}
                 animate={{ opacity: [0, 1, 1], y: 0 }}
-                transition={{ duration: 0.8, delay: 1.15 + i * 0.18, ease: 'easeOut' }}
+                transition={{ duration: 0.8, delay: 0.75 + i * 0.14, ease: 'easeOut' }}
               />
             ))}
           </div>
@@ -92,7 +96,7 @@ export default function Hero() {
             className="hero-tagline"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 1, delay: 1.05, ease: [0.22, 1, 0.36, 1] }}
           >
             Aromas que marcam
           </motion.p>
@@ -101,7 +105,7 @@ export default function Hero() {
             className="hero-texto"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.8, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.8, delay: 1.25, ease: [0.22, 1, 0.36, 1] }}
           >
             Desde o TagusPark, em Oeiras, a INN AROMA cria assinaturas olfativas para hotéis,
             empresas, eventos e para a sua casa. Difusores, fragrâncias exclusivas e a convicção
@@ -134,7 +138,7 @@ export default function Hero() {
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.7rem' }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 2.4 }}
+            transition={{ duration: 1, delay: 1.8 }}
           >
             <span className="rotulo">Descer</span>
             <span className="hero-scroll-linha" />

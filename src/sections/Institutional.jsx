@@ -19,7 +19,7 @@ export default function Institutional() {
         </Revelar>
         <Revelar custom={2}>
           <figure className="banner-gama">
-            <img src="/images/grupo.jpg" alt="Difusor INN AROMA com a gama de recargas de aroma" loading="lazy" />
+            <img src="/images/grupo.webp" alt="Difusor INN AROMA com a gama de recargas de aroma" loading="lazy" />
           </figure>
         </Revelar>
       </div>
@@ -93,7 +93,7 @@ export default function Institutional() {
       <div className="bloco cta">
         <div className="cta-destaque">
           <Revelar className="cta-imagem">
-            <img src="/images/produto-solo.jpg" alt="Difusor Inn Aroma em estúdio" loading="lazy" />
+            <img src="/images/produto-solo.webp" alt="Difusor Inn Aroma em estúdio" loading="lazy" />
           </Revelar>
           <div className="cta-texto">
             <Revelar>
