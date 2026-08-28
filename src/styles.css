@@ -1560,3 +1560,177 @@ a {
     animation: none;
   }
 }
+
+/* ---------- menu móvel (hambúrguer) ---------- */
+.header-burger {
+  display: none;
+}
+
+.menu-movel {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  /* em telemóvel o header ganha fundo ao sair do topo: sem isto o logo e os links
+     ficam por cima do texto das páginas */
+  .header {
+    mix-blend-mode: normal;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: background 0.35s ease, border-color 0.35s ease;
+  }
+
+  .header-solida,
+  .header-menu-aberto {
+    background: var(--papel);
+    border-bottom-color: var(--linha);
+  }
+
+  .header-menu-aberto {
+    border-bottom-color: transparent;
+  }
+
+  .header-nav {
+    gap: 0.75rem;
+  }
+
+  .header-nav .header-ligacao {
+    display: none;
+  }
+
+  .header-loja {
+    font-size: 0.6rem;
+    letter-spacing: 0.24em;
+    padding: 0.7em 1em 0.55em;
+  }
+
+  .header-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    margin-right: -0.6rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .header-burger span {
+    display: block;
+    width: 22px;
+    height: 1px;
+    margin: 0 auto;
+    background: var(--tinta);
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .header-menu-aberto .header-burger span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .header-menu-aberto .header-burger span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  .menu-movel {
+    position: fixed;
+    inset: 0;
+    z-index: 55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 1.6rem 2.4rem;
+    background: var(--papel);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1rem);
+    transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s linear 0.45s;
+  }
+
+  .menu-movel.aberto {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.35s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s;
+  }
+
+  .menu-movel-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .menu-movel-ligacao {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.55rem 0;
+    font-family: var(--fonte-logo);
+    font-weight: 200;
+    font-size: clamp(1.9rem, 8.5vw, 2.4rem);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    line-height: 1.1;
+    border-bottom: 1px solid var(--linha);
+    opacity: 0;
+    transform: translateY(0.6rem);
+    transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .menu-movel.aberto .menu-movel-ligacao {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .menu-movel.aberto li:nth-child(1) .menu-movel-ligacao { transition-delay: 0.08s; }
+  .menu-movel.aberto li:nth-child(2) .menu-movel-ligacao { transition-delay: 0.14s; }
+  .menu-movel.aberto li:nth-child(3) .menu-movel-ligacao { transition-delay: 0.2s; }
+  .menu-movel.aberto li:nth-child(4) .menu-movel-ligacao { transition-delay: 0.26s; }
+
+  .menu-movel-ligacao.ativa {
+    font-weight: 400;
+  }
+
+  .menu-movel-num {
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    color: var(--cinza);
+    min-width: 1.8em;
+  }
+
+  .menu-movel-loja {
+    align-self: flex-start;
+    margin-top: 2.2rem;
+    font-family: var(--fonte-logo);
+    font-weight: 500;
+    font-size: 0.68rem;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    border: 1px solid var(--tinta);
+    padding: 0.9em 1.5em 0.75em;
+  }
+
+  .menu-movel-rodape {
+    margin-top: auto;
+    color: var(--cinza);
+    letter-spacing: 0.3em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .header-burger span,
+  .menu-movel,
+  .menu-movel-ligacao {
+    transition: none;
+  }
+}
