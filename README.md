@@ -40,3 +40,9 @@ Positioning, audiences and the visual system are documented in [`PRODUCT.md`](PR
 npm install
 npm run dev
 ```
+
+## License
+
+The code is released under the [MIT](LICENSE) licence © 2026 Guilherme Borges.
+
+The INN AROMA name, logo, product photos and other brand assets belong to their respective owner and are **not** covered by this licence. This is an unofficial concept with no affiliation with the brand.
