@@ -1,5 +1,7 @@
 # INN AROMA — website proposal (concept)
 
+[![CI](https://github.com/guiboorges/inn-aroma/actions/workflows/ci.yml/badge.svg)](https://github.com/guiboorges/inn-aroma/actions/workflows/ci.yml) [![Release](https://img.shields.io/github/v/release/guiboorges/inn-aroma)](https://github.com/guiboorges/inn-aroma/releases/latest) [![License: MIT](https://img.shields.io/github/license/guiboorges/inn-aroma)](LICENSE)
+
 > **⚠️ Unofficial proposal.** This site is a redesign concept I created on my own initiative for INN AROMA, a Portuguese scent-marketing company. **It is not the official website** ([innaroma.pt](https://innaroma.pt)) and **it was not commissioned or approved by the company**. The brand, products and client logos belong to their respective owners and appear here solely to demonstrate the proposal.
 
 **[▶ See the live proposal](https://inn-aroma.vercel.app)**
