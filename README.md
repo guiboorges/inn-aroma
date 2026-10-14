@@ -1,46 +1,42 @@
-# INN AROMA — proposta de site (conceito)
+# INN AROMA — website proposal (concept)
 
-> **⚠️ Proposta não oficial.** Este site é um conceito de redesign que criei por iniciativa própria para a INN AROMA, empresa portuguesa de marketing olfativo. **Não é o site oficial** ([innaroma.pt](https://innaroma.pt)) e **não foi aprovado nem encomendado pela empresa**. A marca, os produtos e os logótipos de clientes pertencem aos respetivos donos e aparecem aqui apenas para demonstrar a proposta.
+> **⚠️ Unofficial proposal.** This site is a redesign concept I created on my own initiative for INN AROMA, a Portuguese scent-marketing company. **It is not the official website** ([innaroma.pt](https://innaroma.pt)) and **it was not commissioned or approved by the company**. The brand, products and client logos belong to their respective owners and appear here solely to demonstrate the proposal.
 
-**[▶ Ver a proposta ao vivo](https://inn-aroma.vercel.app)**
+**[▶ See the live proposal](https://inn-aroma.vercel.app)**
 
-![Página inicial: o difusor em 3D a libertar névoa](docs/screenshots/home.png)
+The site's content is in European Portuguese, since it was designed for a Portuguese company.
 
-## A ideia
+![Home page: the 3D diffuser releasing mist](docs/screenshots/home.png)
 
-Uma marca de aromas vende uma coisa que não se vê. O desafio do site era fazer **sentir** o produto através do ecrã: o difusor aparece em 3D, a névoa sobe devagar e a página respira com calma, como um espaço perfumado.
+## The idea
 
-A proposta foi pensada para dois públicos ao mesmo tempo:
+A fragrance brand sells something you can't see. The challenge was to make people **feel** the product through a screen: the diffuser appears in 3D, the mist rises slowly and the page breathes calmly, like a scented room.
 
-- **Empresas** (hotéis, aeroportos, retalho, clínicas, eventos) que procuram credibilidade e um contacto rápido.
-- **Consumidores** que querem escolher um difusor ou um aroma para casa e seguir para a loja.
+The proposal was designed for two audiences at once:
 
-## Destaques
+- **Businesses** (hotels, airports, retail, clinics, events) looking for credibility and a quick way to get in touch.
+- **Consumers** who want to choose a diffuser or a home fragrance and head to the shop.
 
-- **Difusor em 3D** feito com three.js, com partículas de névoa animadas no hero.
-- **Contactos que reagem:** o difusor está "em repouso" e acorda à medida que a pessoa escreve a mensagem.
-- **Sete famílias de aromas** (herbais, florais, frutados, vinhos, amadeirados, alta perfumaria, gourmet), cada uma com a sua cor.
-- **Imagens de produto em ambiente geradas com IA** (Gemini), a partir de prompts escritos para cada cenário (`scripts/gen-images.mjs`).
-- **Performance:** imagens WebP, three.js carregado à parte (code-splitting) e hero otimizado.
-- **Mobile:** menu hambúrguer e cabeçalho que ganha fundo ao fazer scroll.
+## Highlights
 
-![Contactos: o difusor acorda com cada palavra escrita](docs/screenshots/contactos.png)
+- **3D diffuser** built with three.js, with animated mist particles in the hero.
+- **A contact page that reacts:** the diffuser sits "at rest" and wakes up as the visitor types their message.
+- **Seven scent families** (herbal, floral, fruity, wine, woody, fine fragrance, gourmet), each with its own colour.
+- **AI-generated lifestyle product images** (Gemini), created from prompts written for each setting (`scripts/gen-images.mjs`).
+- **Performance:** WebP images, three.js loaded separately (code-splitting) and an optimised hero.
+- **Mobile:** hamburger menu and a header that gains a background on scroll.
+
+![Contact page: the diffuser wakes up with every word typed](docs/screenshots/contactos.png)
 
 ## Stack
 
-React 19 · Vite · three.js · React Three Fiber + Drei · Motion · publicado na Vercel.
+React 19 · Vite · three.js · React Three Fiber + Drei · Motion · deployed on Vercel.
 
-O posicionamento, os públicos e o sistema visual estão documentados em [`PRODUCT.md`](PRODUCT.md) e [`DESIGN.md`](DESIGN.md).
+Positioning, audiences and the visual system are documented in [`PRODUCT.md`](PRODUCT.md) and [`DESIGN.md`](DESIGN.md) (internal docs, written in Portuguese).
 
-## Correr localmente
+## Running locally
 
 ```bash
 npm install
 npm run dev
 ```
-
----
-
-### In English
-
-**Unofficial concept.** A self-initiated redesign proposal for INN AROMA, a Portuguese scent-marketing company. It is not the official site and was not commissioned or approved by the company; all brands and client logos belong to their owners. Highlights: a three.js diffuser with animated mist, a contact form that "wakes up" the diffuser as you type, seven colour-coded scent families and AI-generated lifestyle product shots (Gemini). Built with React, Vite, React Three Fiber and Motion. **[See the live concept](https://inn-aroma.vercel.app)**.
